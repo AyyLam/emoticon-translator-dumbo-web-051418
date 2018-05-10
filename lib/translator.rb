@@ -17,7 +17,7 @@ end
 
 def get_japanese_emoticon(path, emoticon)
   file = load_library(path)
-  file[get_emoticon].each do |key, value|
+  file["get_emoticon"].each do |key, value|
     if key == emoticon
       return value
     end
