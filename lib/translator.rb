@@ -30,6 +30,7 @@ def get_english_meaning(path, emoticon)
   file["get_meaning"].each do |key, value|
     if key == emoticon 
       return value
-      
-  
+    end
+  end
+  return "Sorry that emoticon was not found"
 end
